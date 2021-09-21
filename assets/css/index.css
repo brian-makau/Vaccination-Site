@@ -36,7 +36,15 @@ input[type=text], textarea {
     margin-bottom: 16px;
     resize: vertical;
   }
-  
+
+  /* Create two columns that float next to eachother */
+.column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+
 
 
 
