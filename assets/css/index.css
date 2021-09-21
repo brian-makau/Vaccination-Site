@@ -1,0 +1,18 @@
+.navbar{
+    background-color:#800080 !important;
+    }
+/* Style Hero section */
+#hero-section{
+    background: url("../images/herobackground.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity:0.5;
+    min-height: 80vh;
+
+}
+/* Style the about  Section */
+
+
+
+
+/* Style the Conact  Section */
