@@ -47,7 +47,7 @@
           </div>
           <div class="row mt-5">
             <div class="col"> <button type="button" class ="btn btn-primary" data-bs-toggle="modal" data-bs-target="#individualmodal">FOR INDIVIDUALS</button>
-            <button class="btn btn-primary">FOR COMPANIES</button>
+            <button class="btn btn-primary"data-bs-toggle="modal" data-bs-target="#companymodal">FOR COMPANIES</button>
             </div>
           </div>
         </div>
@@ -78,12 +78,12 @@
       <!-- Start the Modals -->
       <!-- Button trigger modal -->
 
-      <!-- Modal -->
-      <div class="modal fade" id="individualmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <!-- Modal for individual booking page-->
+      <div class="modal fade" id="individualmodal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">INDIVIDUAL BOOKING PAGE</h5>
+              <h5 class="modal-title" id="">INDIVIDUAL BOOKING PAGE</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
@@ -97,7 +97,7 @@
                 <div class="col-md-6">
                   <div class="form-group">
                     <label  class="form-label">D.O.B</label>
-                    <input type="number" class="form-control" placeholder="enter your Date of birth" min="0">
+                    <input type="date" class="form-control" placeholder="enter your Date of birth" min="0">
                   </div>
                 </div>
               </div>
@@ -139,6 +139,52 @@
         </div>
       </div>
       <!-- End the modals -->
+
+      <!-- booking for companies booking page -->
+      <div class="modal fade" id="companymodal" tabindex="-1"  aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="">COMPANY BOOKING SITE</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col">
+                  <label class="form-label">NAME OF THE COMPANY</label>
+                  <input type="text" class="form-control">
+                </div>                
+              </div>
+              <div class="col">
+                <label class="form-label">SELECT TIME AND DATE</label>
+                <input type="datetime-local" class="form-control">
+              </div>
+              <div class="row">
+                <div class="col-6">
+                  <label class="form-label">ESTIMATED NO. OF PEOPLE</label>
+                  <input type="number" min="0" class="form-control">
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-gruop">
+                  <label class="form-label">WHERE ARE YOU LOCATED ?</label>
+                  <input type="text" class="form-control">
+                </div>                
+              </div>
+              <div class="row">
+                <div class="col-4">
+                  <label for="" class="form-label">Contact info.</label>
+                  <input type="email" class="form-control" placeholder="company@yahoo.com">
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">SUBMIT</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end of the modals -->
 
     
 
