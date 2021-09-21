@@ -44,6 +44,13 @@ input[type=text], textarea {
     margin-top: 6px;
     padding: 20px;
   }
+  /* Create two columns that float next to eachother */
+.container-hh {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
 
 
 
