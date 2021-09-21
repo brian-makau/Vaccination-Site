@@ -7,6 +7,7 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="icon" href="./assets/images/logo.png">
     <title>Covid-Booking-Site</title>
   </head>
   <body>
@@ -35,6 +36,23 @@
       <!-- End Navbar -->
       <!-- Start Hero Section -->
       <div id="hero-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-6 mt-5">
+              <h1 class="mb-4 ">GET VACCINATED</h1>
+              <p class="mb-5" id="tagline">Vaccines save millions of lives each year. Vaccines work by training and preparing the body’s 
+                natural defences – the immune system – to recognize and fight
+                off the viruses and bacteria they target. <span>--W.H.O</span></p>
+            </div>
+          </div>
+          <div class="row mt-5">
+            <div class="col"> <button type="button" class ="btn btn-primary" data-bs-toggle="modal" data-bs-target="#individualmodal">FOR INDIVIDUALS</button>
+            <button class="btn btn-primary"data-bs-toggle="modal" data-bs-target="#companymodal">FOR COMPANIES</button>
+            </div>
+          </div>
+        </div>
+        
+        
 
       </div>
 
@@ -71,6 +89,126 @@
 
 
       <!-- End Contact Section -->
+      <!-- Footer -->
+      <footer>
+        <h1 class="text-center"><img src="./assets/images/logo.png" alt=""></h1>
+        <p class="text-center">123 Street, Nairobi Kenya</p>
+        <p class="text-center">+254 707 123 123 | info@gmail.com</p>
+        <p class="text-center">Copyright &copy; 2021 by <span>MOH</span></p>
+      </footer>
+    
+      <!-- End footer -->
+
+      <!-- Start the Modals -->
+      <!-- Button trigger modal -->
+
+      <!-- Modal for individual booking page-->
+      <div class="modal fade" id="individualmodal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="">INDIVIDUAL BOOKING PAGE</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label  class="form-label">ID</label>
+                    <input type="number" class="form-control" placeholder="enter your id number" min="0">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label  class="form-label">D.O.B</label>
+                    <input type="date" class="form-control" placeholder="enter your Date of birth" min="0">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <label class="form-label">EMAIL</label>
+                  <input type="email" class="form-control" placeholder="enter your email address">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <label class="form-label">COUNTY</label>
+                  <select class="form-select">
+                    <option selected>Select Your Current Residence</option>
+                    <option value="1">Nairobi</option>
+                    <option value="2">Kisumu</option>
+                    <option value="3">Busia</option>
+                  </select>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">DATE AND TIME</label>
+                  <input type="datetime-local" class="form-control">                  
+                </div>
+              </div>
+              <div class="row">
+                <label for="" class="form-label">SELECT PREFERABLE LOCATION</label>
+                <select class="form-select">
+                  <option selected>Select Your Preferable Residence</option>
+                  <option value="1">KNH-Nairobi</option>
+                  <option value="2">KNH-Kisumu</option>
+                  <option value="3">KNH-Busia</option>
+                </select>
+              </div>
+            </div>
+            <div class="modal-footer">              
+              <button type="button" class="btn btn-primary modal-btn">SUBMIT</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End the modals -->
+
+      <!-- booking for companies booking page -->
+      <div class="modal fade" id="companymodal" tabindex="-1"  aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="">COMPANY BOOKING SITE</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col">
+                  <label class="form-label">NAME OF THE COMPANY</label>
+                  <input type="text" class="form-control">
+                </div>                
+              </div>
+              <div class="col">
+                <label class="form-label">SELECT TIME AND DATE</label>
+                <input type="datetime-local" class="form-control">
+              </div>
+              <div class="row">
+                <div class="col-6">
+                  <label class="form-label">ESTIMATED NO. OF PEOPLE</label>
+                  <input type="number" min="0" class="form-control">
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-gruop">
+                  <label class="form-label">WHERE ARE YOU LOCATED ?</label>
+                  <input type="text" class="form-control">
+                </div>                
+              </div>
+              <div class="row">
+                <div class="col-4">
+                  <label for="" class="form-label">Contact info.</label>
+                  <input type="email" class="form-control" placeholder="company@yahoo.com">
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">SUBMIT</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end of the modals -->
 
     
 
