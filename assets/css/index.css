@@ -43,3 +43,9 @@
 footer {
     background-color: #800080;
 }
+/* MODALS */
+.modal .btn-primary {
+    color: #fff;
+    background-color: #800080;
+    border-color: #800080;
+}

@@ -46,7 +46,7 @@
             </div>
           </div>
           <div class="row mt-5">
-            <div class="col"> <button class="btn btn-primary">FOR INDIVIDUALS</button>
+            <div class="col"> <button type="button" class ="btn btn-primary" data-bs-toggle="modal" data-bs-target="#individualmodal">FOR INDIVIDUALS</button>
             <button class="btn btn-primary">FOR COMPANIES</button>
             </div>
           </div>
@@ -76,6 +76,68 @@
       <!-- End footer -->
 
       <!-- Start the Modals -->
+      <!-- Button trigger modal -->
+
+      <!-- Modal -->
+      <div class="modal fade" id="individualmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">INDIVIDUAL BOOKING PAGE</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label  class="form-label">ID</label>
+                    <input type="number" class="form-control" placeholder="enter your id number" min="0">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label  class="form-label">D.O.B</label>
+                    <input type="number" class="form-control" placeholder="enter your Date of birth" min="0">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <label class="form-label">EMAIL</label>
+                  <input type="email" class="form-control" placeholder="enter your email address">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <label class="form-label">COUNTY</label>
+                  <select class="form-select">
+                    <option selected>Select Your Current Residence</option>
+                    <option value="1">Nairobi</option>
+                    <option value="2">Kisumu</option>
+                    <option value="3">Busia</option>
+                  </select>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">DATE AND TIME</label>
+                  <input type="datetime-local" class="form-control">                  
+                </div>
+              </div>
+              <div class="row">
+                <label for="" class="form-label">SELECT PREFERABLE LOCATION</label>
+                <select class="form-select">
+                  <option selected>Select Your Preferable Residence</option>
+                  <option value="1">KNH-Nairobi</option>
+                  <option value="2">KNH-Kisumu</option>
+                  <option value="3">KNH-Busia</option>
+                </select>
+              </div>
+            </div>
+            <div class="modal-footer">              
+              <button type="button" class="btn btn-primary modal-btn">SUBMIT</button>
+            </div>
+          </div>
+        </div>
+      </div>
       <!-- End the modals -->
 
     
