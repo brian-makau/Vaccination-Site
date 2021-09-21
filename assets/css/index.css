@@ -11,7 +11,9 @@
 
 }
 /* Style the about  Section */
-
+p, ul, a{
+    display: none;
+}
 
 
 
