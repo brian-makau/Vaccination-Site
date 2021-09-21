@@ -15,4 +15,28 @@
 
 
 
+
 /* Style the Contact  Section */
+* {
+    box-sizing: border-box;
+}
+
+.container-contact {
+    border-radius: 5px;
+    background-color: #800080;
+    padding: 10px;
+  }
+
+/* Style inputs */
+input[type=text], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+
+
+
+
