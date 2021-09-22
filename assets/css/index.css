@@ -33,7 +33,14 @@
   transform: rotate(-4deg);
 }
 /* Style the about  Section */
+p, ul, a{
+    display: none;
+}
 
+h3 {
+    cursor: pointer;
+    color: #0088cc;
+}
 
 
 
