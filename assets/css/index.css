@@ -14,8 +14,15 @@
 
 .container-fluid{
     background-image: url(../images/about3.png);
-    background-color: palevioletred;
+    color: purple;
 }
+
+h1{
+    color:indigo;
+    text-align:center;
+    text-decoration: underline;
+}
+
 
 
 
