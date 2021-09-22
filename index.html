@@ -24,10 +24,10 @@
                 <a class="nav-link active" aria-current="page" href="#">HOME</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="">ABOUT</a>
+                <a class="nav-link" href="#about">ABOUT</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="">CONTACT</a>
+                <a class="nav-link" href="#contact">CONTACT</a>
               </li>            
             </ul>
           </div>
@@ -45,24 +45,53 @@
                 off the viruses and bacteria they target. <span>--W.H.O</span></p>
             </div>
           </div>
-          <div class="row mt-5">
+          <div class="row mt-5">           
             <div class="col"> <button type="button" class ="btn btn-primary" data-bs-toggle="modal" data-bs-target="#individualmodal">FOR INDIVIDUALS</button>
             <button class="btn btn-primary"data-bs-toggle="modal" data-bs-target="#companymodal">FOR COMPANIES</button>
             </div>
           </div>
         </div>
-        
-        
-
       </div>
 
       <!-- End Hero Section -->
       <!-- Start of About Section -->
+      <div class="container">
+          <h1 class="text-black text-center welcome h-text" id="about">ABOUT US.</h1>
+          <h3 class="text-black text-center delani h-text">Covid-19 information,data
+              and statistics</h3>
+              <p>  
+                <h5 class="text-black text-left text h-text small-text ">Covid-19 is an acute respiratory illness that is 
+                  capable of producing severe symptoms and in 
+                  some instances death especially in patients 
+                  with underlying health conditions. Fortunately,
+                  there are ways to prevent contraction and 
+                  spread of the disease such as:
+                  <ol>
+                    <li>Vaccination against the disease.</li>
+                    <li>Observing proper physical distance.</li>
+                    <li>Wearing of a face mask over the mouth and nose. </li>
+                    <li>Observing proper sanitation.</li>
+                  </ol>
+                  We urge you to get vaccinated as it has proven 
+                  to be the most effective way of prevention .
+                  Register online now with us to schedule a date 
+                  to receive your vaccination jab and boost your 
+                  fighting chance against the disease.</h5>
+                  
+              <p>
+                While vaccines may not be 100% effective in preventing contraction, the do have a greatly significant impact on
+                 your body’s immunity giving you higher chances to beatthe infection.
+              </p>
 
-      <!-- End About section -->
-      <section class="p-5 ">
-        <div class="container">
-          <h1 class="h1 text-center">About Covid-19 And Vaccination</h1>
+              <p>In unvaccinated persons the infection rate is at 15% while in vaccinated persons, it is only at 2 %</p>
+
+              <p>In unvaccinated infected persons, 16 out of 100 die of the infection while
+                 in vaccinated infected persons, only 3 out of 100 die of the illness as illustrated below: </p>
+              </p>
+      </div>
+      <section class="p-5 bg-light">
+        <div class="">
+          <h1 class="text-center ">Vaccination</h1>
           <div class="row text-center">
             <div class="col-md my-3">
               <div class="card">
@@ -98,8 +127,8 @@
                     If you are currently sick or experiencing symptoms of COVID-19, you can get vaccinated once your primary symptoms have resolved.<br>
                     In addition to the general recommendations above, each vaccine may have specific considerations for specific populations and health conditions.
                   </p>
-                  <a href="#" class="btn btn-success">Read More</a>
                 </div>
+                <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/covid-19-vaccines" class="btn btn-success mb-2 more" target="_blank">Read More</a>
               </div>
             </div>
             <div class="col-md my-3">
@@ -138,8 +167,8 @@
                       The R&D Blueprint has been activated to accelerate diagnostics, vaccines and therapeutics for this novel coronavirus. 
                       The solidarity of all countries will be essential to ensure equitable access to COVID-19 health products.
                     </p>
-                    <a href="#" class="btn btn-success more">Read More</a>
                   </div>
+                  <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/situation-reports" class="btn btn-success mb-2 more" target="_blank">Read More</a>
                 </div>
               </div>
             </div>
@@ -207,46 +236,62 @@
                       an animal source in the market or an infected human could have introduced the virus to the market and the virus may have then been
                       amplified in the market environment.
                     </p>
-                    <a href="#" class="btn btn-success more">Read More</a>
                   </div>
+                  <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019" class="btn btn-success mb-2 more" target="_blank">Read More</a>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
+
+      <!-- End About section -->
       <!-- Start Contact Section -->
-      <div class="container-contact">
-        <div class="form-data">
-          <h2>CONTACT US</h2>
-          <form class="center-container">
-            <div class="column">
-              <label>Name</label>
-              <input type="text" id="" placeholder="Name..." class="form-control">
+      <div class="contact-section bg-dark" id="contact">
+        <div class="container text-light">
+          <div class="form-data">
+            <h2 class="text-center">CONTACT US</h2>
+            <form class="mt-2" >
+              <div class="form-gruop">
+                <label class="form-label">Name</label>
+                <input type="text" id="email" placeholder="Name..." class="form-control">
+              </div>
+              <div class="form-gruop">
+                <label class="form-label">E-mail</label>
+                <input type="text" class="form-control" placeholder="Email..." >
+              </div>
+              <div class="form-gruop">
+                <label class="form-label">Message</label>
+                <input type="text" class="form-control" placeholder="Message..."  style="height: 100px">
+              </div>
+              <button class="btn btn-primary mt-3 d-block">SEND</button>
+              
+             
+            </form>
+            
+            
+  
+            <div class="container-find">
+              <h3>How to find us</h3>
+              <p>If you have any questions or comments you can fill in the form above and we will respond in 14 days</p>
             </div>
-            <div class="column">
-              <label>E-mail</label>
-              <input type="text" id="" placeholder="Email..." class="form-control">
-            </div>
-            <label>Message</label>
-            <textarea type="text" id="message" placeholder="Message..." class="form-control" rows="30" cols="70" style="height: 170px;"></textarea>
-          </form>
-        </div>        
+          </div>
+        </div>
+
       </div>
+     
 
       <!-- End Contact Section -->
       <!-- Footer -->
-      <footer>
+      <footer class="text-light">
         <h1 class="text-center"><img src="./assets/images/logo.png" alt=""></h1>
-        <p class="text-center">123 Street, Nairobi Kenya</p>
+        <p class="text-center ">123 Street, Nairobi Kenya</p>
         <p class="text-center">+254 707 123 123 | info@gmail.com</p>
-        <p class="text-center">Copyright &copy; 2021 by <span>MOH</span></p>
+        <p class="text-center">Copyright &copy; 2021 by <span>MOH</span></p>        
       </footer>
     
       <!-- End footer -->
-
-      <!-- Start the Modals -->
-      <!-- Button trigger modal -->
+       <!-- Start the Modals -->
 
       <!-- Modal for individual booking page-->
       <div class="modal fade" id="individualmodal" tabindex="-1" aria-hidden="true">
@@ -256,55 +301,144 @@
               <h5 class="modal-title" id="">INDIVIDUAL BOOKING PAGE</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <label  class="form-label">ID</label>
-                    <input type="number" class="form-control" placeholder="enter your id number" min="0">
+            <form id="indvidual-form">
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label  class="form-label">ID</label>
+                      <input type="number" id="id" class="form-control" placeholder="enter your id number" min="0" required>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label  class="form-label">D.O.B</label>
+                      <input type="datetime-local" id="dob" class="form-control" placeholder="enter your Date of birth" min="0"required>
+                    </div>
                   </div>
                 </div>
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <label  class="form-label">D.O.B</label>
-                    <input type="date" class="form-control" placeholder="enter your Date of birth" min="0">
+                <div class="row">
+                  <div class="col">
+                    <label class="form-label">EMAIL</label>
+                    <input id="email" type="email" class="form-control" placeholder="enter your email address" required>
                   </div>
                 </div>
-              </div>
-              <div class="row">
-                <div class="col">
-                  <label class="form-label">EMAIL</label>
-                  <input type="email" class="form-control" placeholder="enter your email address">
+                <div class="row">
+                  <div class="col-md-6">
+                    <label class="form-label">COUNTY</label>
+                    <select class="form-select" id="county">
+                      <option value="001">Mombasa</option>
+                      <option value="002">Kwale</option>
+                      <option value="003">Kilifi</option>
+                      <option value="004">Tanariver</option>
+                      <option value="005">Lamu</option>
+                      <option value="006">Taita Taveta</option>
+                      <option value="007">Garissa</option>
+                      <option value="008">Wajir</option>
+                      <option value="009">Mandera</option>
+                      <option value="010">Marsabit</option>
+                      <option value="011">Isiolo</option>
+                      <option value="012">Meru</option>
+                      <option value="013">Tharaka Nithi</option>
+                      <option value="014">Embu</option>
+                      <option value="015">Kitui</option>
+                      <option value="016">Machakos</option>
+                      <option value="017">makueni</option>
+                      <option value="018">Nyandarua</option>
+                      <option value="019">Nyeri</option>
+                      <option value="020">Kirinyaga</option>
+                      <option value="021">Murang'a</option>
+                      <option value="022">Kiambu</option>
+                      <option value="023">Turkana</option>
+                      <option value="024">West Pokot</option>
+                      <option value="025">Samburu</option>
+                      <option value="026">Trans-Zoia</option>
+                      <option value="027">Uasin-Gishu</option>
+                      <option value="028">Elgeyo-Marakwet</option>
+                      <option value="029">Nandi</option>
+                      <option value="030">Baringo</option>
+                      <option value="031">Laikipia</option>
+                      <option value="032">Nakuru</option>
+                      <option value="033">Narok</option>
+                      <option value="034">Kajiado</option>
+                      <option value="035">Kericho</option>
+                      <option value="036">Bomet</option>
+                      <option value="037">Kakamega</option>
+                      <option value="038">Vihiga</option>
+                      <option value="039">Bungoma</option>
+                      <option value="040">Busia</option>
+                      <option value="041">Siaya</option>
+                      <option value="042">Kisumu</option>
+                      <option value="043">Homa Bay</option>
+                      <option value="044">Migori</option>
+                      <option value="045">Kisii</option>
+                      <option value="046">Nyamira</option>
+                      <option value="047">Nairobi</option>
+                    </select>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label">DATE AND TIME</label>
+                    <input type="datetime-local" class="form-control" id="date" required>                  
+                  </div>
                 </div>
-              </div>
-              <div class="row">
-                <div class="col-md-6">
-                  <label class="form-label">COUNTY</label>
-                  <select class="form-select">
-                    <option selected>Select Your Current Residence</option>
-                    <option value="1">Nairobi</option>
-                    <option value="2">Kisumu</option>
-                    <option value="3">Busia</option>
+                <div class="row">
+                  <label for="" class="form-label">SELECT PREFERABLE LOCATION</label>
+                  <select id="location" class="form-select">
+                    <option value="mombasa hospital">Mombasa Hospital</option>
+                    <option value="diani beach hospital">Diani Beach Hospital</option>
+                    <option value="watamu hospital">Watamu Hospital</option>
+                    <option value="hola county referral hospital">Hola County Referral Hospital</option>
+                    <option value="lamu referral hospital">Lamu Referral Hospital</option>
+                    <option value="moi county referral hospital">Moi County Referral Hospital</option>
+                    <option value="bura district hospital">Bura District Hospital</option>
+                    <option value="wajir county referral hospital">Wajir County Referral Hospital</option>
+                    <option value="mandera central sub county hospital">Mandera Central Sub County Hospital</option>
+                    <option value="catholic hospital laisamis">Catholic Hospital Laisamis</option>
+                    <option value="isiolo county referral hospital">Isiolo County Referral Hospital</option>
+                    <option value="githongo district hospital">Githongo District Hospital</option>
+                    <option value="chuka county referral hospital">Chuka county referral hospital</option>
+                    <option value="embu level 5 hospital">Embu level 5 hospital</option>
+                    <option value="kitui county referral hospital">Kitui County Referral Hospital</option>
+                    <option value="mutuini level 4">Mutuini Level 4</option>
+                    <option value="makueni county referral hospital">Makueni County Referral Hospital</option>
+                    <option value="engineer county hospital">Engineer County Hospital</option>
+                    <option value="nyeri county referral hospital">NYERI COUNTY REFERRAL HOSPITAL</option>
+                    <option value="kerugoya county referral hospital">Kerugoya county referral hospital </option>
+                    <option value="murang'a county referral hospital">Murang'a County Referral Hospital</option>
+                    <option value="thika level 5 hospital">Thika Level 5 Hospital</option>
+                    <option value="lodwar county referral hospital">Lodwar County Referral Hospital</option>
+                    <option value="kapenguria county referral hospital">Kapenguria county referral hospital</option>
+                    <option value="samburu county referral hospital">Samburu County Referral Hospital</option>
+                    <option value="kitale county hospital">Kitale County Hospital</option>
+                    <option value="uasin gishu district hospital">Uasin gishu district Hospital</option>
+                    <option value="iten county referral hospital">Iten County Referral Hospital</option>
+                    <option value="nandi hills county hospital">Nandi Hills County hospital</option>
+                    <option value="baringo county refferal hospital">Baringo County Refferal Hospital</option>
+                    <option value="nyahururu county referral hospital">Nyahururu County Referral Hospital</option>
+                    <option value="nakuru provincial general hospital">Nakuru Provincial General Hospital</option>
+                    <option value="narok county referal hospital">Narok county Referal Hospital</option>
+                    <option value="kajiado county referral hospital">Kajiado County Referral Hospital</option>
+                    <option value="kericho county referral hospital">Kericho County Referral Hospital</option>
+                    <option value="longisa county referral hospital">Longisa County referral Hospital</option>
+                    <option value="kakamega general and referral hospital">Kakamega General and Referral Hospital</option>
+                    <option value="coptic mission hospital">Coptic Mission Hospital</option>
+                    <option value="bungoma county referral hospital ">Bungoma county referral hospital </option>
+                    <option value="busia county referral hospital"> Busia County Referral Hospital</option>
+                    <option value="siaya medical centre">Siaya Medical Centre</option>
+                    <option value="kisumu county referral hospital">Kisumu County Referral Hospital</option>
+                    <option value="kendu adventist hospital">Kendu Adventist Hospital</option>
+                    <option value="migori county referral hospital">Migori county referral hospital</option>
+                    <option value="marble hospital"> Marble Hospital</option>
+                    <option value="manga district hospital">Manga District Hospital</option>
+                    <option value="kenyatta national hospital">Kenyatta National Hospital</option>
                   </select>
                 </div>
-                <div class="col-md-6">
-                  <label class="form-label">DATE AND TIME</label>
-                  <input type="datetime-local" class="form-control">                  
-                </div>
               </div>
-              <div class="row">
-                <label for="" class="form-label">SELECT PREFERABLE LOCATION</label>
-                <select class="form-select">
-                  <option selected>Select Your Preferable Residence</option>
-                  <option value="1">KNH-Nairobi</option>
-                  <option value="2">KNH-Kisumu</option>
-                  <option value="3">KNH-Busia</option>
-                </select>
+              <div class="modal-footer">              
+                <button type="submit" class="btn btn-primary modal-btn">SUBMIT</button>
               </div>
-            </div>
-            <div class="modal-footer">              
-              <button type="button" class="btn btn-primary modal-btn">SUBMIT</button>
-            </div>
+            </form>
+            
           </div>
         </div>
       </div>
@@ -318,43 +452,51 @@
               <h5 class="modal-title" id="">COMPANY BOOKING SITE</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">
-              <div class="row">
+            <form id="company-form">
+              <div class="modal-body">              
+                <div class="row">
+                  <div class="col">
+                    <label class="form-label">NAME OF THE COMPANY</label>
+                    <input type="text" class="form-control" id="companyName" required>
+                  </div>                
+                </div>
                 <div class="col">
-                  <label class="form-label">NAME OF THE COMPANY</label>
-                  <input type="text" class="form-control">
-                </div>                
-              </div>
-              <div class="col">
-                <label class="form-label">SELECT TIME AND DATE</label>
-                <input type="datetime-local" class="form-control">
-              </div>
-              <div class="row">
-                <div class="col-6">
-                  <label class="form-label">ESTIMATED NO. OF PEOPLE</label>
-                  <input type="number" min="0" class="form-control">
+                  <label class="form-label">SELECT TIME AND DATE</label>
+                  <input type="datetime-local" class="form-control" id="timeslot" required>
+                </div>
+                <div class="row">
+                  <div class="col-6">
+                    <label class="form-label">ESTIMATED NO. OF PEOPLE</label>
+                    <input type="number" min="0" class="form-control"id="people" required>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="form-gruop">
+                    <label class="form-label">WHERE ARE YOU LOCATED ?</label>
+                    <input type="text" class="form-control" id="companyaddress" required>
+                  </div>                
+                </div>
+                <div class="row">
+                  <div class="col-4">
+                    <div class="form-gruop">
+                      <label for="" class="form-label">Contact info.</label>
+                      <input type="email" class="form-control" placeholder="company@yahoo.com" id="companyemail" required>
+                    </div>                    
+                  </div>
                 </div>
               </div>
-              <div class="row">
-                <div class="form-gruop">
-                  <label class="form-label">WHERE ARE YOU LOCATED ?</label>
-                  <input type="text" class="form-control">
-                </div>                
+              <div class="modal-footer">
+                <button type="submit" class="btn btn-primary">SUBMIT</button>
               </div>
-              <div class="row">
-                <div class="col-4">
-                  <label for="" class="form-label">Contact info.</label>
-                  <input type="email" class="form-control" placeholder="company@yahoo.com">
-                </div>
-              </div>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-primary">SUBMIT</button>
-            </div>
+          </form>
+            
           </div>
         </div>
       </div>
       <!-- end of the modals -->
+
+
+
 
     
 
