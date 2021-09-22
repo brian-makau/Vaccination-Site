@@ -12,6 +12,11 @@
 }
 /* Style the about  Section */
 
+.container-fluid{
+    background-image: url(../images/about3.png);
+    background-color: palevioletred;
+}
+
 
 
 
