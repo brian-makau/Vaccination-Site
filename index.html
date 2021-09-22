@@ -45,15 +45,12 @@
                 off the viruses and bacteria they target. <span>--W.H.O</span></p>
             </div>
           </div>
-          <div class="row mt-5">
+          <div class="row mt-5">           
             <div class="col"> <button type="button" class ="btn btn-primary" data-bs-toggle="modal" data-bs-target="#individualmodal">FOR INDIVIDUALS</button>
             <button class="btn btn-primary"data-bs-toggle="modal" data-bs-target="#companymodal">FOR COMPANIES</button>
             </div>
           </div>
         </div>
-        
-        
-
       </div>
 
       <!-- End Hero Section -->
@@ -319,27 +316,43 @@ illness as illustrated below: </p>
               <h5 class="modal-title" id="">INDIVIDUAL BOOKING PAGE</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <label  class="form-label">ID</label>
-                    <input type="number" class="form-control" placeholder="enter your id number" min="0">
+            <form id="indvidual-form">
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label  class="form-label">ID</label>
+                      <input type="number" id="id" class="form-control" placeholder="enter your id number" min="0" required>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label  class="form-label">D.O.B</label>
+                      <input type="date" id="dob" class="form-control" placeholder="enter your Date of birth" min="0"required>
+                    </div>
                   </div>
                 </div>
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <label  class="form-label">D.O.B</label>
-                    <input type="date" class="form-control" placeholder="enter your Date of birth" min="0">
+                <div class="row">
+                  <div class="col">
+                    <label class="form-label">EMAIL</label>
+                    <input id="email" type="email" class="form-control" placeholder="enter your email address" required>
                   </div>
                 </div>
-              </div>
-              <div class="row">
-                <div class="col">
-                  <label class="form-label">EMAIL</label>
-                  <input type="email" class="form-control" placeholder="enter your email address">
+                <div class="row">
+                  <div class="col-md-6">
+                    <label class="form-label">COUNTY</label>
+                    <select class="form-select" id="county">
+                      <option value="1">Nairobi</option>
+                      <option value="2">Kisumu</option>
+                      <option value="3">Busia</option>
+                    </select>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label">DATE AND TIME</label>
+                    <input type="datetime-local" class="form-control" id="date" required>                  
+                  </div>
                 </div>
-              </div>
+
               <div class="row">
                 <div class="col-md-6">
                   <label class="form-label">COUNTY</label>
@@ -392,13 +405,11 @@ illness as illustrated below: </p>
                     <option value="046">Nyamira</option>
                     <option value="047">Nairobi</option>
 
+
                   </select>
                 </div>
-                <div class="col-md-6">
-                  <label class="form-label">DATE AND TIME</label>
-                  <input type="datetime-local" class="form-control">                  
-                </div>
               </div>
+
               <div class="row">
                 <label for="" class="form-label">SELECT PREFERABLE LOCATION</label>
                 <select class="form-select">
@@ -450,11 +461,10 @@ illness as illustrated below: </p>
                   <option value="manga district hospital">Manga District Hospital</option>
                   <option value="kenyatta national hospital">Kenyatta National Hospital</option>
                 </select>
+
               </div>
-            </div>
-            <div class="modal-footer">              
-              <button type="button" class="btn btn-primary modal-btn">SUBMIT</button>
-            </div>
+            </form>
+            
           </div>
         </div>
       </div>
@@ -468,39 +478,44 @@ illness as illustrated below: </p>
               <h5 class="modal-title" id="">COMPANY BOOKING SITE</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">
-              <div class="row">
+            <form id="company-form">
+              <div class="modal-body">              
+                <div class="row">
+                  <div class="col">
+                    <label class="form-label">NAME OF THE COMPANY</label>
+                    <input type="text" class="form-control" id="companyName" required>
+                  </div>                
+                </div>
                 <div class="col">
-                  <label class="form-label">NAME OF THE COMPANY</label>
-                  <input type="text" class="form-control">
-                </div>                
-              </div>
-              <div class="col">
-                <label class="form-label">SELECT TIME AND DATE</label>
-                <input type="datetime-local" class="form-control">
-              </div>
-              <div class="row">
-                <div class="col-6">
-                  <label class="form-label">ESTIMATED NO. OF PEOPLE</label>
-                  <input type="number" min="0" class="form-control">
+                  <label class="form-label">SELECT TIME AND DATE</label>
+                  <input type="datetime-local" class="form-control" id="timeslot" required>
+                </div>
+                <div class="row">
+                  <div class="col-6">
+                    <label class="form-label">ESTIMATED NO. OF PEOPLE</label>
+                    <input type="number" min="0" class="form-control"id="people" required>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="form-gruop">
+                    <label class="form-label">WHERE ARE YOU LOCATED ?</label>
+                    <input type="text" class="form-control" id="companyaddress" required>
+                  </div>                
+                </div>
+                <div class="row">
+                  <div class="col-4">
+                    <div class="form-gruop">
+                      <label for="" class="form-label">Contact info.</label>
+                      <input type="email" class="form-control" placeholder="company@yahoo.com" id="companyemail" required>
+                    </div>                    
+                  </div>
                 </div>
               </div>
-              <div class="row">
-                <div class="form-gruop">
-                  <label class="form-label">WHERE ARE YOU LOCATED ?</label>
-                  <input type="text" class="form-control">
-                </div>                
+              <div class="modal-footer">
+                <button type="submit" class="btn btn-primary">SUBMIT</button>
               </div>
-              <div class="row">
-                <div class="col-4">
-                  <label for="" class="form-label">Contact info.</label>
-                  <input type="email" class="form-control" placeholder="company@yahoo.com">
-                </div>
-              </div>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-primary">SUBMIT</button>
-            </div>
+          </form>
+            
           </div>
         </div>
       </div>

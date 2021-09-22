@@ -1,7 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&family=Sen&display=swap');
+/* style the Navbar */
 .navbar{
     background-color:#800080 !important;
     }
+.navbar a{
+    font-size:20px;
+    font-weight:400;
+
+}
+.navbar a:hover{
+    color:ivory;
+}
 /* Style Hero section */
 #hero-section{
     background: url("../images/herobackground.jpg");
