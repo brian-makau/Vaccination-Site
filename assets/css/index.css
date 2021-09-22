@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&family=Sen&display=swap');
 .navbar{
     background-color:#800080 !important;
     }
@@ -6,20 +7,43 @@
     background: url("../images/herobackground.jpg");
     background-size: cover;
     background-position: center;
-    opacity:0.5;
-    min-height: 80vh;
+    min-height: 70vh;
 
+}
+#hero-section h1{
+    color: #fff;
+    font-family: 'Rock Salt', cursive;
+}
+#hero-section p{
+    color: #fff;
+    font-family: 'Sen', sans-serif;
+    line-height: 1.6;
+
+}
+#hero-section span{
+    font-style: italic;
+    font-weight:bold;
+}
+#hero-section .btn-primary {
+    color: #fff;
+    background-color: #800080;
+    border-color: #800080;
+}
+#tagline{
+  transform: rotate(-4deg);
 }
 /* Style the about  Section */
-
-
-
-
-
-/* Style the Contact  Section */
-* {
-    box-sizing: border-box;
+ p, ul, a{
+    display: none;
 }
+
+
+
+h3 {
+    cursor: pointer;
+    color: #0088cc;
+}
+
 
 .container-contact {
     border-radius: 5px;
@@ -56,3 +80,15 @@ input[type=text], textarea {
 
 
 
+/* Style the Conact  Section */
+
+/* Style the footer */
+footer {
+    background-color: #800080;
+}
+/* MODALS */
+.modal .btn-primary {
+    color: #fff;
+    background-color: #800080;
+    border-color: #800080;
+}
