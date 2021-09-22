@@ -33,20 +33,21 @@
     font-style: italic;
     font-weight:bold;
 }
-#hero-section .btn-primary {
+ .btn-primary {
     color: #fff;
     background-color: #800080;
     border-color: #800080;
+}
+.btn-primary:hover{
+    background-color: #800080;
+
 }
 #tagline{
   transform: rotate(-4deg);
 }
 /* Style the about  Section */
-p, ul, a{
-    display: none;
-}
 
-.h2{
+/* .h2{
     background-color: #800080;
     padding: 10px;
     border-radius: 20px;
@@ -62,7 +63,7 @@ h3 {
     width: 70%;
     margin: auto;
 }
-
+ */
 
 
 /* Style the Conact  Section */

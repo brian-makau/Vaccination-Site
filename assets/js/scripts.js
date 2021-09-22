@@ -49,7 +49,8 @@ function individualFunc(e) {
     site = $("#location").val();
     const individualbook = new Individualbook(Id,dob,email,county,date,site);
     console.log(individualbook);
-    Store.addbooking(individualbook);  
+    Store.addbooking(individualbook); 
+    console.log(individualbook); 
     alert("Check your email we have send the summary of the appointment")
     location.reload();
      
@@ -67,6 +68,7 @@ function companyFunc(e){
     alert("booking success")
     const companybook = new Companybook(companyName,timeslot,people, companyaddress, companyemail);
     console.log(companybook);
+    location.reload();
 }
 //add event listeners
 $("#indvidual-form").submit(individualFunc);
