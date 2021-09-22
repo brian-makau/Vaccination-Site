@@ -46,9 +46,21 @@ p, ul, a{
     display: none;
 }
 
+.h2{
+    background-color: #800080;
+    padding: 10px;
+    border-radius: 20px;
+    color: white;
+}
+
 h3 {
     cursor: pointer;
     color: #0088cc;
+}
+
+.more {
+    width: 70%;
+    margin: auto;
 }
 
 
