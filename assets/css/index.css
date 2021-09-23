@@ -33,7 +33,7 @@
     font-style: italic;
     font-weight:bold;
 }
- .btn-primary {
+.btn-primary {
     color: #fff;
     background-color: #800080;
     border-color: #800080;
@@ -45,28 +45,6 @@
 #tagline{
   transform: rotate(-4deg);
 }
-/* Style the about  Section */
-
-/* .h2{
-    background-color: #800080;
-    padding: 10px;
-    border-radius: 20px;
-    color: white;
-}
-
-h3 {
-    cursor: pointer;
-    color: #0088cc;
-}
-
-.more {
-    width: 70%;
-    margin: auto;
-}
- */
-
-
-/* Style the Conact  Section */
 
 /* Style the footer */
 footer {
